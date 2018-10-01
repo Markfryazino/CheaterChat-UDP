@@ -47,7 +47,6 @@ namespace Cheater_Chat_1._3
             Outputter.PrintWarning("Ты вошел в чат!");
             ChangeEnabled(true);
             AuthorizeBox.ReadOnly = true;
-            AuthorizeBox.BackColor = Color.FromArgb(255, 224, 192);
             AuthorizeBtn.Enabled = false;
         }
 
