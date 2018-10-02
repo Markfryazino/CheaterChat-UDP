@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>chat-43_icon-icons.com_65949.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -84,10 +87,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ConspirativeBackground.bmp" />
+    <None Include="Resources\pascal %282%29.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pascal %282%29.jpg" />
+    <None Include="Resources\ЛоготипBraveNewSoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chat-43_icon-icons.com_65949.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

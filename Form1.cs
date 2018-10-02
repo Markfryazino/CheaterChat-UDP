@@ -25,8 +25,8 @@ namespace Cheater_Chat_1._3
         {
             ConnectionList.Enabled = b;
             SendMessageBtn.Enabled = b;
-            UserMessageBox.Enabled = b;
-            MessageViewBox.Enabled = b;
+            UserMessageBox.Visible = b;
+            MessageViewBox.Visible = b;
         }
 
         private void MainForm_Load(object sender, EventArgs e) //метод, возникающий при загрузке формы

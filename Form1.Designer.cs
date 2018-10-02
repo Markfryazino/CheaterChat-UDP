@@ -38,6 +38,8 @@
             this.HelpBtn = new System.Windows.Forms.Button();
             this.AuthorizeBtn = new System.Windows.Forms.Button();
             this.AuthorizeBox = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // MessageViewBox
@@ -63,7 +65,7 @@
             this.CallbackBox.Location = new System.Drawing.Point(28, 453);
             this.CallbackBox.Name = "CallbackBox";
             this.CallbackBox.ReadOnly = true;
-            this.CallbackBox.Size = new System.Drawing.Size(329, 112);
+            this.CallbackBox.Size = new System.Drawing.Size(262, 112);
             this.CallbackBox.TabIndex = 16;
             this.CallbackBox.Text = "";
             // 
@@ -101,7 +103,7 @@
             this.ConnectionList.FormattingEnabled = true;
             this.ConnectionList.Items.AddRange(new object[] {
             "Подключены:"});
-            this.ConnectionList.Location = new System.Drawing.Point(511, 164);
+            this.ConnectionList.Location = new System.Drawing.Point(600, 164);
             this.ConnectionList.Name = "ConnectionList";
             this.ConnectionList.Size = new System.Drawing.Size(185, 156);
             this.ConnectionList.TabIndex = 11;
@@ -111,7 +113,7 @@
             this.ExitBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ExitBtn.BackColor = System.Drawing.Color.White;
             this.ExitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ExitBtn.Location = new System.Drawing.Point(723, 237);
+            this.ExitBtn.Location = new System.Drawing.Point(812, 237);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(196, 52);
             this.ExitBtn.TabIndex = 12;
@@ -124,7 +126,7 @@
             this.HelpBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.HelpBtn.BackColor = System.Drawing.Color.White;
             this.HelpBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.HelpBtn.Location = new System.Drawing.Point(723, 164);
+            this.HelpBtn.Location = new System.Drawing.Point(812, 164);
             this.HelpBtn.Name = "HelpBtn";
             this.HelpBtn.Size = new System.Drawing.Size(196, 55);
             this.HelpBtn.TabIndex = 13;
@@ -136,7 +138,7 @@
             this.AuthorizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AuthorizeBtn.BackColor = System.Drawing.Color.White;
             this.AuthorizeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AuthorizeBtn.Location = new System.Drawing.Point(813, 93);
+            this.AuthorizeBtn.Location = new System.Drawing.Point(902, 93);
             this.AuthorizeBtn.Name = "AuthorizeBtn";
             this.AuthorizeBtn.Size = new System.Drawing.Size(106, 49);
             this.AuthorizeBtn.TabIndex = 15;
@@ -149,10 +151,22 @@
             this.AuthorizeBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.AuthorizeBox.BackColor = System.Drawing.Color.White;
             this.AuthorizeBox.Font = new System.Drawing.Font("Lucida Sans Unicode", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AuthorizeBox.Location = new System.Drawing.Point(511, 93);
+            this.AuthorizeBox.Location = new System.Drawing.Point(600, 93);
             this.AuthorizeBox.Name = "AuthorizeBox";
             this.AuthorizeBox.Size = new System.Drawing.Size(282, 49);
             this.AuthorizeBox.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Cheater_Chat_1._3.Properties.Resources.ЛоготипBraveNewSoft;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(296, 474);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(77, 69);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
@@ -162,6 +176,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1031, 605);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.AuthorizeBox);
             this.Controls.Add(this.CallbackBox);
             this.Controls.Add(this.AuthorizeBtn);
@@ -171,10 +186,12 @@
             this.Controls.Add(this.SendMessageBtn);
             this.Controls.Add(this.UserMessageBox);
             this.Controls.Add(this.MessageViewBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
-            this.Text = "CheaterChat 1.3";
+            this.Text = "CheaterChat v1.4";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +207,7 @@
         public System.Windows.Forms.Button HelpBtn;
         public System.Windows.Forms.Button AuthorizeBtn;
         public System.Windows.Forms.TextBox AuthorizeBox;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
