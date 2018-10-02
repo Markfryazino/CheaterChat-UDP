@@ -64,5 +64,12 @@ namespace Cheater_Chat_1._3
                 Client.Destroy();
             this.Close();
         }
+
+
+        private void HelpBtn_Click(object sender, EventArgs e)
+        {
+            HelpForm hf = new HelpForm();
+            hf.Show();
+        }
     }
 }

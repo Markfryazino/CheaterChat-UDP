@@ -132,6 +132,7 @@
             this.HelpBtn.TabIndex = 13;
             this.HelpBtn.Text = "Справка";
             this.HelpBtn.UseVisualStyleBackColor = false;
+            this.HelpBtn.Click += new System.EventHandler(this.HelpBtn_Click);
             // 
             // AuthorizeBtn
             // 
